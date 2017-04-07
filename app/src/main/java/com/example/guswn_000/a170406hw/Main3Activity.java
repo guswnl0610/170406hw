@@ -19,6 +19,7 @@ public class Main3Activity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
+        setTitle("정보 상세보기");
         name = (TextView)findViewById(R.id.txtname);
         menu1 = (TextView)findViewById(R.id.etmenu1);
         menu2 = (TextView)findViewById(R.id.etmenu2);

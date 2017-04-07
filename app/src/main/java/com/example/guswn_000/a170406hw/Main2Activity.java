@@ -31,7 +31,7 @@ public class Main2Activity extends AppCompatActivity
         rb1 = (RadioButton)findViewById(R.id.radio1);
         rb2 = (RadioButton)findViewById(R.id.radio2);
         rb3 = (RadioButton)findViewById(R.id.radio3);
-
+        setTitle("새 주문");
 
         //ArrayList<String> dt = Intent.getStringExtra("restlist");
 
