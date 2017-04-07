@@ -1,6 +1,7 @@
 package com.example.guswn_000.a170406hw;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -53,20 +54,22 @@ public class Main3Activity extends AppCompatActivity
 
     public void onClick(View v)
     {
+        Intent intent = getIntent();
+        Restaurant res = intent.getParcelableExtra("restinfo");
         switch (v.getId())
         {
             case R.id.btnback:
                 finish();
                 break;
-            case R.id.imageView2:
-
+            case R.id.imageView2://전화
+                Intent intent2 = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:/"+res.getTel()));
+                startActivity(intent2);
                 break;
 
             case R.id.imageView3:
-
+                Intent intent3 = new Intent(Intent.ACTION_VIEW,Uri.parse(res.getHomepage()));
+                startActivity(intent3);
                 break;
         }
-
     }
-
 }
