@@ -54,21 +54,21 @@
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/etmenu1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:background="#ffffff"
                     android:text="메뉴1(가격)"
                     android:padding="3dp" />
                 <TextView
                     android:id="@+id/etmenu2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:background="#ffffff"
                     android:text="메뉴2(가격)"
                     android:padding="3dp" />
                 <TextView
                     android:id="@+id/etmenu3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:background="#ffffff"
                     android:text="메뉴3(가격)"

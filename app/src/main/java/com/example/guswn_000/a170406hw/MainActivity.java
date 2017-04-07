@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity
                             }
                         })
                         .show();
-                return false;
+                return true;
             }
         });
 
@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity
                 Restaurant res = restlist.get(position);
                 intent.putExtra("restinfo",res);
                 startActivity(intent);
+
             }
         });
 
